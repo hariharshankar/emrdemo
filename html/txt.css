@@ -1,0 +1,35 @@
+#header{
+    background-color:black;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    float:left;
+    clear:both;
+    position: absolute;
+
+}
+#nav{
+
+    line-height: 30px;
+    margin: 0px;
+    background-color: lightgray;
+    height: 750px;
+    width: 150px;
+    float: left;
+    padding: 5px;
+}
+ul li ul {display:none;}
+
+    #content{ width: 800px;
+        float:left;
+        padding: 10px;
+    }
+    table,th,td{ border: 1px solid black;
+    border: collapse;}
+    #form{width:950px;
+        line-height: 30px;
+        padding: 10px;
+        border: 2px solid navy;
+        margin:2px;
+    clear: both;}
+    </style>

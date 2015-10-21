@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>India</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!--<style>
+#home{background-color: #FFCCFF;}
+#grid{background-color:#66FF66;}
+#population{background-color:#99CCFF;}
+
+
+</style>-->
+</head>
+<body>
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">About India</a>
+    </div>
+  <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">Home</a></li>
+	<li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Indian States
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#grid">TamilNadu</a></li>
+            <li><a href="#grid">Maharastra</a></li>
+            <li><a href="#grid">Delhi</a></li>
+          </ul>
+        </li>
+        <li><a href="#geo">Geogrpahy</a></li>
+        <li><a href="#population">Population</a></li>
+        <li><a href="#history">History</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#form"><span class="glyphicon glyphicon-log-in"></span> Login To Edit</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="btn-group">
+  <a href="#flag" class="btn btn-primary" role="button">flag</a>
+  <a href="#" data-toggle="tooltip" title="Pie Chart not there" button type="button" class="btn btn-primary">Pie Chart </a>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">bar graph</button>
+  <a href = "#map" class="btn btn-info" role="button">Map</a>
+  
+  <a href="#" data-toggle="popover" title="Foods" data-content="Indian food is awesome" class="btn btn-primary">Food</a>
+
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+<div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Barchart</h4>
+        </div>
+        <div class="modal-body">
+          <p>bar chart not available.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+ <form class="navbar-form navbar-right " role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+ <form class="navbar-form navbar-right" role="search">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+</div>
+
+ <div class="jumbotron">
+ <h1> This page is about India </h1>
+<p> Welcome to my page!!!1 </p>
+</div>
+<div id="home">
+<h2> About India</h2>
+<p> 
+India, officially the Republic of India (Bhārat Gaṇarājya),[13][14][c] is a country in South Asia. It is the seventh-largest country by area, the second-most populous country with over 1.2 billion people, and the most populous democracy in the world. India is a federal constitutional republic governed under a parliamentary system consisting of 29 states and 7 union territories
+</p>
+<div>
+<div id="grid">
+<h2> Grid </h2>
+<div class="row">
+	<div class="col-md-4" style="background-color:lavender;"> 
+			<h4><em>TamilNadu</em></h3>
+			<p> Tamil Nadu is state in southern part of india. Its capital is Chennai. Its one tto most important state in India. Places to vist in Tamil Nadu: Kanchipuram, Madurai</p>
+			
+	</div>
+
+	<div class="col-md-4" style="background-color:lightgray;">
+	<h4><em> Maharastra</em> </h3>
+		<p> Its in western part of India. Its capital is Mumbai. Its one of biggest city in Inida </p>
+	</div>
+     <div class="col-md-4" style="background-color:aquamarine;">
+        <h4><em> Delhi</em> </h3>
+                <p> Its in the Northern part of India. Its capital is Delhi which is capital of India. Its one of biggest city in Inida </p>
+        </div>
+
+</div>
+</div>
+<hr/>
+<div id="population">
+<h2>Population</h2>
+  <p>The table-bordered class adds borders to a table:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Population in 2000</th>
+        <th>Population in 2010</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maharastra</td>
+        <td>15000000</td>
+        <td>26599093898</td>
+      </tr>
+      <tr>
+        <td>Tamil Nadu</td>
+        <td>143903208439</td>
+        <td>34324359439594</td>
+      </tr>
+      <tr>
+        <td>Delhi</td>
+        <td>4756375</td>
+        <td>3243748347</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <hr/>
+<h3 id="geo"> Geography </h3>
+<div class="well well-lg"> India lies within the Indomalaya ecozone and contains three biodiversity hotspots.[138] One of 17 megadiverse countries, it hosts 8.6% of all mammalian, 13.7% of all avian, 7.9% of all reptilian, 6% of all amphibian, 12.2% of all piscine, and 6.0% of all flowering plant species </div>
+<h2 id="history"> History </h2>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Ancient India</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body"> The earliest authenticated human remains in South Asia date to about 30,000 years ago.[26] Nearly contemporaneous Mesolithic rock art sites have been found in many parts of the Indian subcontinent, including at the Bhimbetka rock shelters in Madhya Pradesh</div>
+    </div>
+  </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Modern Times</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body"> Historians consider India's modern age to have begun sometime between 1848 and 1885. The appointment in 1848 of Lord Dalhousie as Governor General of the East India Company set the stage for changes essential to a modern state.</div>
+    </div>
+  </div>
+  <h2 id="flag">India Flag</h2>
+  <p>This is tricolor flag. With Saffron, white and green. And the center with the Ashoka Chakra</p>            
+  <img src="flag.png" width="400" height="300"  alt="Indian Flag" /> 
+ <h2 id="map">India Map</h2>
+  <p>This is tricolor flag. With Saffron, white and green. And the center with the Ashoka Chakra</p>         
+  <img src="india.jpg" class="img-rounded" alt="India map" width="400" height="300">
+<div class="panel panel-default">
+<div class="panel-body">
+<h2> Login information </h2>
+ <form id="form" class="form-inline" role="form">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</div>
+</form>
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+

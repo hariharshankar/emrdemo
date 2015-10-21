@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Buying Coffee</title>
+        <style>
+        #header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        #nav {
+            line-height: 30px;
+            margin: 0px;
+            background-color: lightgray;
+            height: 750px;
+            width: 150px;
+            float: left;
+            padding: 5px;
+        }
+        #content{
+                width: 800px;
+                float: left;
+                padding: 10px;
+    }
+        table,th,td
+                    { border: 1px solid black;
+                     border: collapse;}
+        #form{
+              width:950px;
+              line-height: 30px;
+              padding: 10px;
+              border: 2px solid navy;
+              margin:2px;
+              clear: both;}
+        </style>
+
+    </head>
+    <body>
+        <div id="header">
+            <h1>Buying Coffee</h1>
+        </div>
+        <div id="nav">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#brands">Brands</a>
+                    <ul>
+                        <li>Starbucks</li>
+                        <li>Peet's</li>
+                        <li>Lavazza</li>
+                        <li>Baristas</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="home">
+                <h2 style="text-decoration:underline">Home</h2>
+                <p> coffee is a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. Coffee plants are cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, India and Africa. The two most commonly grown are the highly regarded arabica, and the less sophisticated but stronger and more hardy robusta. The latter is resistant to the coffee leaf rust, Hemileia vastatrix, but has a more bitter taste. Once ripe, coffee beans are picked, processed, and dried. Green (unroasted) coffee beans are one of the most traded agricultural commodities in the world. Once traded, the beans are roasted to varying degrees, depending on the desired flavor, before being ground and brewed to create coffee.</p>
+            </div>
+            <div id="About">
+                <h2 style="text-decoration:underline">About the shop</h2>
+                <p>Buying coffee offers our customers luscious artisan Coffee. We roast premium arabica coffee beans daily in Santa Fe, NM. We sell many fine single origin and estate coffees along with our signature balanced and crafted blends.<br/>
+
+                We always micro-roasted in small batches of 30 lbs or less in our classic gas heated drum Probat roaster. Ohori's now offers a diverse selection of Roast profiles. From our original dark roasts to medium roasts for coffee such as Organic Mexico or true light roast as in our new Ethiopia - Lightly Roasted.
+                This place is located in Aldea Santa Fe, New Mexico.<br/>
+                <address><span style="font-style:italic">Visit us at:</span><br>
+                    35 Arroyo Privado<br/>
+                    Santa Fe, NM 87507<br/>
+                    USA </address>
+                </p>
+            </div>
+            <div id="brands">
+                <h2 style="text-decoration:underline">Brands</h2>
+                <p> The brands we offer are as follows:</p>
+                <table>
+                    <tr> 
+                        <th> Coffee Name </th>
+                        <th> Description </th>
+                    </tr>
+                    <tr>
+                        <td>Starbucks</td>
+                        <td>When we bring home the finest beans to craft your perfect beverage, then pair it with food made from the finest ingredients, it’s no wonder happiness pours. Explore our menu in the Starbucks® app and create a combination that's just awesome.</td>
+                    </tr>
+                    <tr>
+                        <td>Peets</td>
+                        <td>When we bring home the finest beans to craft your perfect beverage, then pair it with food made from the finest ingredients, it’s no wonder happiness pours. Explore our menu in the Peet's app and create a combination that's just awesome.</td>
+                    </tr>
+                    <tr>
+                        <td>Lavazza</td>
+                        <td>When we bring home the finest beans to craft your perfect beverage, then pair it with food made from the finest ingredients, it’s no wonder happiness pours. Explore our menu in the app and create a combination that's just awesome.</td>
+                </table>
+            </div>
+        </div><br/>
+        <div id="form">
+        <form>
+        
+            <b style="color:green;text-decoration:underline">Coffee Purchase Information</b><br>
+            <label> Name:</label>
+            <input type="text" name"name"><br/>
+                Brand Name:<input type="checkbox" Value="Starbucks" name="starbucks">Starbucks
+                           
+                <input type="checkbox" Value="Peets" name="peets">Peet's
+                
+                <input type="checkbox" Value="Lavazza" name="lavazza">Lavazza <br/>
+            
+                Size: <Select name="size">
+                    <option value="small">Small</option>
+                    
+                    <option value="Medium">Medium</option>
+                    
+                    <option value="Large">Large</option>
+                </select><br/>
+                <br/>
+                <input type="submit" value="ORDER">
+
+            
+        </form>
+        <hr/>
+        <form> 
+            <fieldset> 
+                <legend> Card Information </legend>
+                <strong>Card Number:</strong> <input type="number" name="cardnumber" placeholder="Card info">
+            
+                <strong> CV Code:</strong> <input type="password" name="password" required><br/>
+                <strong> Card type:</strong> <input type="radio" name="radio" value="mastercard"> Master Card
+                <input type="radio" name="radio" value="visa">Visa<br/>
+                <input type="button" value="Confirm Order"> 
+            </fieldset>
+        </form>
+        <hr/>
+        <form>
+            <em>Confirmation ID<em>: <input type="text" name="name"><br/>
+                    <em> Comment<em>: <textarea> Additional requirement for the order </textarea>
+               <input type="submit" value="Add Comment">
+        </form>
+        </div>
+
+    </body>
+    </html>
