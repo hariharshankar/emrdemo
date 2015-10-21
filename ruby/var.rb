@@ -1,3 +1,4 @@
+# tried class and instance variable examples
 
 class Customer
 #Class Variable
